@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# 🛍️ AFCSystem
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Automated Fee Collection System** is a full-stack web application designed to provide a simple and effective way of collecting bus fee digitally. 
+It captures bus plates at the terminal entrance, then calculates the required fee and sends that particular fee as sms to the registered bus owner for payment within a specific period of time. 
+The platform uses AI model to convert the captured plate image into a string, and sends to an endpoint for evaluation and sms sending.
+The image capturing is done by a py-camera, while the model is stored in a raspberry-py microprocessor. 
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📁 Project Structure
 
-## Expanding the ESLint configuration
+This project is split into four parts:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+AFCSystem/
+├── frontend/ # React + TypeScript app
+├── backend/ # Spring Boot app
+├── AI model/ #
+├── IoT/ # Raspberry-py microprocessor + py-camera
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- 🔐 **User Authentication** (username & password)
+- 🛒 **View Arrivals, buses and payments**
+- 📊 **Pagination for item browsing**
+- 🌐 **REST API built with Spring Boot**
+- 📷 **IoT devices to capture plates**
+- 📱 **AI model for image-to-string convertion**
+
+---
+
+## Screenshots to Show the App interfaces
+
+#login page
+![login](https://github.com/user-attachments/assets/c9f231f1-28c9-4b46-99f8-53a832d402dc)
+
+#dashboard
+![dashoard](https://github.com/user-attachments/assets/930e91d4-49a9-4707-9791-e014304b98fd)
+
+
+#buses page
+![buses](https://github.com/user-attachments/assets/e7391abe-d270-4444-956d-b221582bff09)
+
+
+#payments page
+![payments](https://github.com/user-attachments/assets/a1c54f69-08df-48bc-b721-53801e30fc5a)
+
+---
+
+
+📫 Contact
+Built with ❤️ by 
+Suleiman M. Suleiman & Joel C. Mwaisobwa
+🔗 LinkedIn • GitHub
+
+
+
